@@ -1,7 +1,19 @@
 <!-- pages/templates/pages/home.html -->
 
-{% extends "base.html" %}
+{% extends 'base.html' %}
 
-{% block page_content %}
-    <h1>Hello, World!</h1>
-{% endblock page_content %}
+{% block title %}Your Name - Home{% endblock %}
+
+{% block content %}
+    <header>
+        <h1>Your Name</h1>
+        <p>Web Developer &amp; UX Designer</p>
+    </header>
+
+    <section class="split-section">
+        <div class="image-container">
+            <div class="image ux-design"></div>
+            <div class="image coder"></div>
+        </div>
+    </section>
+{% endblock %}
